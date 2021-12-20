@@ -1,0 +1,483 @@
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+/* medium and up screens */
+
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+:root {
+    --rood: #A82424;
+    --zwart: black;
+    --wit: white;
+    --grijs: #d7d7d7;
+}
+
+.bg-donkerderdanwit {
+    background-color: rgba(224, 223, 223, 0.822);
+}
+
+.iconsRow {
+    margin-left: 1px;
+}
+
+@media (min-width: 0px) {
+    .sticky-sm-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .margFooter {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:950px) {
+    header.jumbotron>.w-25 {
+        width: 50%!important;
+    }
+    .info>.w-50 {
+        width: 75%!important;
+    }
+}
+
+i.hoverInsta:hover {
+    background: -webkit-linear-gradient( 45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+    content: " ";
+    transition: all 265ms ease-in;
+}
+
+i.hoverFacebook:hover {
+    background: -webkit-linear-gradient( 45deg, #0167E2 0%, #0167E2 25%, #0C88EF 50%, #0D8BF0 75%, #15A1FA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+    content: " ";
+    transition: all 265ms ease-in;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.color-red {
+    color: var(--rood);
+}
+
+.color-zwart {
+    color: var(--zwart);
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+li.navigatie1 {
+    float: left;
+}
+
+div.navigatie {
+    background-color: var(--rood);
+}
+
+body {
+    font-family: "Poppins", arial, tahoma;
+    margin-bottom: 0;
+}
+
+a.btn-outline-rood:link,
+a.btn-outline-rood:visited {
+    color: var(--zwart);
+    background-color: var(--wit);
+    border-color: var(--zwart);
+}
+
+a.btn-outline-rood:hover,
+a.btn-outline-rood:active {
+    color: var(--wit);
+    background-color: var(--rood);
+    border-color: var(--rood);
+}
+
+a.btn-outline-carzwart:link,
+a.btn-outline-carzwart:visited {
+    color: var(--zwart);
+    background-color: var(--wit);
+    border-color: var(--wit);
+}
+
+a.btn-outline-carzwart:hover,
+a.btn-outline-carzwart:active {
+    color: var(--wit);
+    background-color: var(--zwart);
+    border-color: var(--zwart);
+}
+
+a.btn-outline-zwart:link,
+a.btn-outline-zwart:visited {
+    color: var(--zwart);
+    background-color: var(--wit);
+    border-color: var(--zwart);
+}
+
+a.btn-outline-zwart:hover,
+a.btn-outline-zwart:active {
+    color: var(--wit);
+    background-color: var(--zwart);
+    border-color: var(--zwart);
+}
+
+a.linksInstagram:link,
+a.linksInstagram:visited {
+    color: var(--rood);
+    text-decoration: none;
+}
+
+a.linksInstagram:hover,
+a.linksInstagram:active {
+    color: var(--zwart);
+}
+
+a.links:link,
+a.links:visited {
+    color: var(--rood);
+}
+
+a.links:hover,
+a.links:active {
+    color: var(--zwart);
+}
+
+.navbar-nav .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navbar-brand {
+    padding-left: 10px;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-toggler {
+    padding: 0 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sizingIcons>i {
+    font-size: 50px;
+}
+
+.tekst {
+    margin-bottom: 1rem;
+}
+
+.navbar>.container-fluid {
+    background-color: var(--zwart);
+}
+
+select {
+    margin: 0em;
+    border-width: 0;
+    border-style: none;
+    border-color: var(--wit);
+    border-image: initial;
+    border-radius: 0px;
+}
+
+.navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@media screen and (max-width:995px) {
+    .navbar-brand {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        margin-right: 0.5rem;
+        margin-left: 0rem;
+        font-size: 1rem;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width:670px) {
+    header.cv>div.w-50 {
+        width: 75%!important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .contactgegevens {
+        text-align: center;
+    }
+    div.gegevens {
+        text-align: center;
+    }
+    div.talen {
+        text-align: center;
+    }
+    div.opleidingen {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1116px) {
+    .contact2>div.w-25 {
+        width: 50%!important;
+    }
+}
+
+.container-fluid>.navbar-brand {
+    color: var(--wit)
+}
+
+.container-fluid>.navbar-brand:hover {
+    color: var(--wit);
+}
+
+.navbar-light .navbar-toggler {
+    color: var(--wit);
+    border-color: var(--wit);
+}
+
+.navbar-light:hover {
+    color: var(--wit);
+}
+
+.toggler {
+    height: 30px;
+    width: 30px;
+}
+
+.bg-black {
+    background-color: var(--zwart);
+}
+
+.bg-red {
+    --bs-bg-opacity: 0;
+    background-color: var(--rood);
+}
+
+.alignIcons {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--zwart);
+    color: var(--wit);
+    height: auto;
+}
+
+img.standaard {
+    width: 200px;
+    height: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.headFontStyle {
+    font-family: 'Special Elite', cursive;
+}
+
+img.fotografie {
+    width: 232px;
+    margin-left: 10px;
+    float: right;
+}
+
+img.breakdance {
+    height: 232px;
+    margin-right: 10px;
+    float: left;
+}
+
+img.snow {
+    width: 200px;
+    margin-left: 10px;
+    float: right;
+}
+
+img.standaard1 {
+    width: 300;
+    height: auto;
+    margin-left: 10px;
+    float: right;
+    border-radius: 60%;
+}
+
+.card {
+    text-align: center;
+}
+
+.imageCenter {
+    text-align: center;
+}
+
+.containerCarousel {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 0 auto;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+main.geenMargin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+main {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: .5rem .5rem;
+}
+
+.bg-grijs {
+    background-color: rgb(163, 163, 163);
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.fl {
+    text-align: left;
+}
+
+@media screen and (max-width:1111px) {
+    img.standaard1 {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .fl {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:776px) {
+    .carouselHobbys>header.w-50 {
+        width: 60%!important;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .cards>.container {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .1rem);
+        padding-left: var(--bs-gutter-x, .1rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .cards>.container>.m-1 {
+        margin: 0!important;
+    }
+}
+
+@media screen and (max-width:480px) {
+    img.fotografie {
+        width: 200px;
+        margin-right: 10px;
+        float: none;
+    }
+    img.breakdance {
+        height: 200px;
+        margin-right: 10px;
+        float: none;
+    }
+    img.snow {
+        width: 200px;
+        margin-right: 10px;
+        float: none;
+    }
+    .fotografie>div {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:750px) {
+    img.standaard1 {
+        width: 250px;
+        height: auto;
+        text-align: center;
+    }
+    .container3 {
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        flex: 0 0 auto;
+        width: 98%;
+    }
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.37rem 0.7rem;
+    }
+    .card-title {
+        font-size: 15px;
+    }
+    .card-text {
+        font-size: 11px;
+    }
+}
+
+.navbar-nav a:hover {
+    background-color: var(--zwart);
+}
